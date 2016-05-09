@@ -15,7 +15,6 @@ const SignInComp = React.createClass({
     }
     return (
       <div>
-          <h1> Signin Comp </h1>
           <h3>Existing Account</h3>
           <input
             placeholder="Email"
