@@ -1,20 +1,20 @@
 import axios from 'axios';
 
 const helpers = {
-  baseUrl: 'http://localhost:3000',
+  baseUrl: 'https://blooming-cove-32397.herokuapp.com/',
 
   getPosts: function() {
-    return axios.get('http://localhost:3000/posts.json')
+    return axios.get('https://blooming-cove-32397.herokuapp.com/posts.json')
   },
   deletePost: function(id) {
-    return axios.delete('http://localhost:3000/:id.json' )
+    return axios.delete('https://blooming-cove-32397.herokuapp.com/:id.json' )
   },
   addPost: function(post, afterAjaxFxn) {
     const uid = localStorage.uid;
     const accessToken = localStorage.accessToken;
     const client = localStorage.client;
 
-    axios.post('http://localhost:3000/posts.json',
+    axios.post('https://blooming-cove-32397.herokuapp.com/posts.json',
       post,
     {
       headers: {
