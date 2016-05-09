@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const helpers = {
-  baseUrl: 'https://blooming-cove-32397.herokuapp.com/',
+  baseUrl: 'https://blooming-cove-32397.herokuapp.com',
 
   getPosts: function() {
     return axios.get('https://blooming-cove-32397.herokuapp.com/posts.json')
